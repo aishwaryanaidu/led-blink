@@ -1,0 +1,13 @@
+//most arduino boards have an inbuilt led at pin number 13.Give it a name//
+int led=13;
+//the setup function runs once you press the reset button//
+void reset(){
+pinmode(led,OUTPUT);
+}
+//following is a loop//
+void loop(){
+digitalwrite(led,HIGH);//the led is set to a high voltage and hence glows//
+delay(1000);//led lows for a time period of one second//
+digitalwrite(led,LOW);//the led is set to a low voltage and it stops blinking//
+delay(1000);//the led stops blinking for a time period of one second//
+}
